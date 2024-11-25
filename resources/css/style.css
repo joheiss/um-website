@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ---------------------------------------- */
+/* MY CUSTOM VARIABLES                         */
+/* ---------------------------------------- */
+:root {
+  --base-color: #ffdec9;
+  --accent-color: #ffbc99;
+  --background-color: #000000;
+  --text-color: #ffdec9;
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: var(--background-color);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--background-color);
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--accent-color);
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ---------------------------------------- */
+/* MY CUSTOM STYLES                         */
+/* ---------------------------------------- */
+
+header {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
+  background-size: contain;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 55vmin;
+  z-index: -1;
+}
+
+input[type=submit]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
+}
+
+.jo-float {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:15%;
+  right:10%;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #222;
+}
+
+.jo-float-btn {
+  margin-top: 20px;
+}
+
+.jo-nav-full {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.jo-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.0em;
+}
+
+.jo-nav-logo-link {
+  align-self: start;
+}
+
+.jo-nav-logo {
+  width: auto;
+  height: 5.0em;
+  float: left;
+  margin-top: 1.0em;
+}
+
+.jo-nav-main {
+  float: right;
+  list-style: none;
+  margin-top: 2.0em;
+
+}
+
+.jo-nav-main li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.jo-nav-main li a:link,
+.jo-nav-main li a:visited {
+  color: var(--accent-color);
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.jo-nav-main li a:hover,
+.jo-nav-main li a:active {
+  border-bottom: 2px solid var(--accent-color)
+}
+
+.jo-nav-icon-mobile {
+  display: none;
+}
+
+.jo-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.jo-content {
+  margin: 0 4.0em;
+}
+
+.jo-divider {
+  width: 90%;
+  margin-top: 4.0em;
+  margin-bottom: 4.0em;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.jo-divider.more {
+  display: none;
+}
+
+.jo-pl {
+  border: 1px solid var(--accent-color);
+}
+
+.jo-fb {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.jo-fb-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.jo-fb-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.jo-welcome-img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  margin-top: 30px
+}
+
+.jo-welcome-logo-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.jo-welcome-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+}
+
+.jo-welcome-title1 {
+  font-size: 6.0em;
+  font-weight: bold;
+}
+
+.jo-welcome-divider {
+  width: 70%;
+  border-bottom: 1px solid var(--accent-color);
+  /* z-index: -1; */
+  margin-top: -20px;
+}
+
+.jo-welcome-title2 {
+  font-size: 4.0em;
+  font-weight: normal;
+}
+
+.jo-welcome-text {
+  width: 50%;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  text-transform: none;
+  margin-top: 2.5em;
+}
+
+.jo-dog-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.jo-dog-main-img {
+  width: 52%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 4.0em;
+}
+
+.jo-dog-kennel {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-size: 2.0em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.jo-dog-kennel.long {
+  font-size: 1.6em;
+}
+
+.jo-dog-name {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-size: 6.0em;
+  font-weight: bold;
+}
+
+.jo-dog-gender-icon {
+  font-size: 6.0em;
+  font-weight: bold;
+}
+
+.jo-dog-parent {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin: 20px 0 20px 0;
+}
+
+.jo-dog-data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.jo-dog-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.jo-dog-story {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 2.0em 0;
+}
+
+.odd {
+  flex-direction: row;
+}
+
+.even {
+  flex-direction: row-reverse;
+}
+
+.jo-dog-story-img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 4.0em;
+}
+
+.jo-dog-story-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 45%;
+}
+
+.jo-dog-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.jo-dog-gallery-img-small {
+  width: 200px;
+  height: auto;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.jo-about-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.jo-about-story {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  column-gap: 2.0em;
+  align-items: center;
+  width: 100%;
+  margin: 2.0em 0;
+}
+
+.jo-about-story.even {
+  flex-direction: row-reverse;
+}
+
+.jo-about-story.more {
+  display: none;
+}
+
+.jo-about-story-img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 4.0em;
+}
+
+.jo-about-story-title {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-size: 2.0em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.0em;
+}
+
+.jo-about-story-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 45%;
+}
+
+.jo-about-story-btn {
+  width: 50%;
+  height: auto;
+  padding: 1.0em 2.0em;
+  text-align: center;
+  align-self: center;
+  background-color: var(--base-color);
+  color: var(--background-color);
+  border: 1px solid var(--base-color);
+  border-radius: 1.5em;
+  margin-top: 2.0em;
+  cursor: pointer;
+}
+
+.jo-about-story-btn:hover {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.jo-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 4.0em;
+  align-items: center;
+}
+
+.jo-gallery.more {
+  display: none;
+}
+
+.jo-gallery-title {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-size: 2.0em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.jo-stories-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.jo-stories-gallery-img-small {
+  width: 200px;
+  height: auto;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+/* ---------------------------------------- */
+/* FANCYBOX STYLES FOR CAPTION              */
+/* ---------------------------------------- */
+.fancybox__slide.has-caption {
+  flex-direction: column;
+}
+
+.fancybox__caption {
+  max-width: 250px;
+  color: var(--text-color);
+  margin-top: 2.5em;
+}
+
+/* ---------------------------------------- */
+/* ACCORDION STYLES                         */
+/* ---------------------------------------- */
+.jo-acc-container {
+  width: 100%;
+  margin: 2.5em auto auto auto;
+}
+
+.jo-acc-container .acc-body {
+  width: 98%;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);;
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  background-color: var(--background-color);
+  line-height: 1.8em;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  transition: 0.5s;
+  display: none;
+}
+
+.jo-acc-container label {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  color: var(--text-color);
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.jo-acc-container input{
+  display: none;
+}
+
+.jo-acc-container label:before {
+  font-family: "Material Icons";
+  content: '\e313';
+  font-weight: bolder;
+  float: right;
+}
+
+.jo-acc-container input:checked+label {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.jo-acc-container input:checked+label:before {
+  font-family: "Material Icons";
+  content: "\e5cd";
+  transition: 0.5s;
+}
+
+.jo-acc-container input:checked~.acc-body {
+  display: block;
+  height: auto;
+  color: var(--text-color);
+  font-size: 1.0em;
+  padding: 1.5em;
+  transition: 0.5s;
+}
+
+
+/* ---------------------------------------- */
+/* UP TO 1200PX - FULL PAGE WIDTH           */
+/* ---------------------------------------- */
+@media only screen and (min-width: 1400px) {
+
+  header {
+    height: 60vmin;
+  }
+}
+
+/* ---------------------------------------- */
+/* UP TO 1200PX - FULL PAGE WIDTH           */
+/* ---------------------------------------- */
+@media only screen and (max-width: 1200px) {
+
+  header {
+    height: 50vmin;
+  }
+
+  .jo-nav-main {
+    display: block;
+  }
+}
+
+/* ---------------------------------------- */
+/* UP TO 1023PX - TABLETS AND SMALL PC      */
+/* ---------------------------------------- */
+@media only screen and (max-width: 1023px) {
+
+  header {
+    height: 47vmin;
+  }
+
+  .jo-dog-main-img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* --------------------------------------------- */
+/* UP TO 910PX - BIG PHONES AND MEDIUM TABLETS   */
+/* --------------------------------------------- */
+@media only screen and (max-width: 910px) {
+
+  header {
+    height: 45vmin;
+  }
+
+  .jo-dog-header {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .jo-dog-main-img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 4.0em;
+  }
+
+  .jo-dog-story {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 2.0em;
+  }
+
+  .jo-dog-story-img {
+    width: 100%;
+  }
+
+  .jo-dog-story-text {
+    width: 100%;
+  }
+
+  .jo-dog-story-text p {
+    margin-left: -2.0em;
+    margin-right: 2.0em;
+  }
+
+  .jo-about-story {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.0em;
+  }
+
+  .jo-about-story-img {
+    width: 66%;
+  }
+
+  .jo-about-story-text {
+    width: 100%;
+  }
+
+}
+
+/* ---------------------------------------- */
+/* UP TO 767PX - PHONES AND SMALL TABLETS   */
+/* ---------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+  .jo-nav {
+    padding: 2.0em 2.0em 0 4.0em;
+  }
+
+  .jo-nav-logo {
+    margin-top: 0;
+  }
+
+  .jo-nav-icon-mobile {
+    display: inline-block;
+    align-self: start;
+  }
+
+  .jo-nav-main {
+    display: none;
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .jo-nav-main li {
+    display: block;
+    line-height: 0.8em;
+  }
+
+  .jo-nav-main li a:link,
+  .jo-nav-main li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .sticky .jo-nav-main {
+    margin-top: 10px;
+  }
+
+  .sticky .jo-nav-main li a:link,
+  .sticky .jo-nav-main li a:visited {
+    padding: 10px 0;
+  }
+
+  .sticky .jo-nav-icon-mobile {
+    margin-top: 10px;
+  }
+
+  .sticky .jo-nav-icon-mobile i {
+    color: #555;
+  }
+}
+
+/* ---------------------------------------- */
+/* UP TO 600PX - ...             */
+/* ---------------------------------------- */
+@media only screen and (max-width: 600px) {
+
+  header {
+    height: 45vmin;
+  }
+
+  .jo-welcome-text p {
+    font-size: 80%;
+  }
+  .jo-dog-gallery-img-small {
+    width: 100px;
+  }
+}
+/* ---------------------------------------- */
+/* UP TO 500X - SMALL PHONES               */
+/* ---------------------------------------- */
+@media only screen and (max-width: 500px) {
+
+  header {
+    height: 45vmin;
+  }
+
+  .jo-page {
+    margin: 0 20px 0 20px;
+  }
+
+}
