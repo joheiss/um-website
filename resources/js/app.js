@@ -28,23 +28,70 @@ function toggleAcc(id) {
 
 // handle more button
 function showMoreAboutUs() {
-  console.log("--- show more pressed ---");
   const stories = document.getElementsByClassName("more");
-  console.log("number of additional stories: " + stories.length);
   for (const story of stories) {
     story.style.display = "flex";
-    console.log("stories set to visible");
   }
 }
 
 // handle less button
 function showLessAboutUs() {
-  console.log("--- show less pressed ---");
   const stories = document.getElementsByClassName("more");
-  console.log("number of additional stories: " + stories.length);
   for (const story of stories) {
     story.style.display = "none";
-    console.log("stories set to hidden");
   }
 }
 
+// show gallery button
+function showGallery() {
+  const gallery = document.getElementsByClassName("jo-stories-gallery")[0];
+  if (gallery) {
+    gallery.style.display = "flex";
+    const showBtn = document.getElementsByClassName("jo-gallery-btn show")[0];
+    showBtn.style.display = "none";
+    const hideBtn = document.getElementsByClassName("jo-gallery-btn hide")[0];
+    hideBtn.style.display = "inline-block";
+  }
+  // other galleries
+  const elements = document.getElementsByClassName("jo-memory-more");
+  for (const element of elements) {
+    element.style.display = "flex";
+  }
+}
+
+  // hide more button
+function hideGallery() {
+  const gallery = document.getElementsByClassName("jo-stories-gallery")[0];
+  if (gallery) {
+    gallery.style.display = "none";
+    const showBtn = document.getElementsByClassName("jo-gallery-btn show")[0];
+    showBtn.style.display = "inline-block";
+    const hideBtn = document.getElementsByClassName("jo-gallery-btn hide")[0];
+    hideBtn.style.display = "none";
+  }
+  // other galleries
+  const elements = document.getElementsByClassName("jo-memory-more");
+  for (const element of elements) {
+    element.style.display = "none";
+  }
+}
+
+// handle show news button
+function showNews() {
+  const list = document.getElementsByClassName("jo-news-list")[0];
+  list.style.display = "flex";
+  const showBtn = document.getElementsByClassName("jo-news-btn show")[0];
+  showBtn.style.display = "none";
+  const hideBtn = document.getElementsByClassName("jo-news-btn hide")[0];
+  hideBtn.style.display = "inline-block";
+}
+
+// handle hide news button
+function hideNews() {
+  const list = document.getElementsByClassName("jo-news-list")[0];
+  list.style.display = "none";
+  const showBtn = document.getElementsByClassName("jo-news-btn show")[0];
+  showBtn.style.display = "inline-block";
+  const hideBtn = document.getElementsByClassName("jo-news-btn hide")[0];
+  hideBtn.style.display = "none";
+}

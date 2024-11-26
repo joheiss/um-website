@@ -48,14 +48,15 @@
       </ul>
       <a class="jo-nav-icon-mobile js--nav-icon-mobile">
         <i class="ion-navicon-round"></i>
+
       </a>
     </div>
   </nav>
 </header>
 
-<div class="jo-page jo-fb-col">
+<div class="jo-page">
 
-    <div class="jo-content jo-fb-col">
+    <div class="jo-content">
       <!-------------------------------------------------------------------------------------->
       <!-- FLOATING BUTTON                                                                  -->
       <!-------------------------------------------------------------------------------------->
@@ -466,11 +467,12 @@
       <div class="jo-divider"></div>
 
       <section id="aboutus" class="jo-fb-col">
+        <p class="jo-about-title">Über uns</p>
         <div class="jo-about-stories">
           <div class="jo-about-story odd">
             <img src="./resources/img/familie.webp" alt="Familie" class="jo-about-story-img">
             <div class="jo-dog-story-text">
-              <p class="jo-about-story-title">Das sind wir, Heike & Jo ...</p>
+              <p>Das sind wir, Heike & Jo</p>
               <p>… mit unseren Kindern Lisa, Lukas, Josy und Julia.</p>
               <br>
               <p>Wir leben mit unseren drei Ridgebacks, einem schwarzen Kater und unserem Pony in einem kleinen Dorf
@@ -508,7 +510,7 @@
                 eine Halbschwester von Aika holten. Mit ihr gründeten sie 2001 ihren eigenen Kennel „Musambani“.</p>
               <br>
               <p>Mehr über Musambani erfahren Sie unter:</p>
-              <a href="http://www.musambani.de" target=”_blank”>www.musambani.de</a>
+              <a href="http://www.musambani.de" target=”_blank” style="color:var(--accent-color);">www.musambani.de</a>
               <a class="jo-about-story-btn less" onclick="showLessAboutUs()">
                 Weniger
               </a>
@@ -536,10 +538,16 @@
         </div>
       </section>
 
-      <div class="jo-divider more"></div>
+      <div class="jo-divider"></div>
 
-      <section id="gallery" class="jo-gallery more">
-        <p class="jo-gallery-title">Galerie</p>
+      <section id="gallery" class="jo-gallery">
+        <p class="jo-gallery-title">Galerien</p>
+        <a class="jo-gallery-btn show" onclick="showGallery()">
+          Galerien anzeigen
+        </a>
+        <a class="jo-gallery-btn hide" onclick="hideGallery()">
+          Galerien ausblenden
+        </a>
         <div id="jo-stories-gallery" class="jo-stories-gallery">
           <a data-fancybox="gallery-story"
              data-src="./resources/img/cookie_und_elena.webp"
@@ -574,14 +582,103 @@
         </div>
       </section>
 
+      <div class="jo-divider jo-memory-more"></div>
+
+      <section id="memory" class="jo-memory jo-memory-more">
+        <p class="jo-memory-title">Unvergessen</p>
+        <div class="jo-memory-list">
+          <div class="jo-memory-card">
+            <img src="./resources/img/chilli.webp" alt="Chilli" class="jo-memory-card-img">
+            <div class="jo-memory-card-text">
+              <p class="jo-memory-card-title">
+                Ave Caesar Ahilles - "Chilli"
+              </p>
+              <p>
+                Ch. Maiden´s Kalahari Kandy <i class="material-icons">male</i> x
+                Podarok Iz Afriki Bliss Bounty <i class="material-icons">female</i>
+              </p>
+              <p>21.8.2011 - 12.8.2022</p>
+              <p>Züchter: Elena und Willy Johannson</p>
+            </div>
+          </div>
+          <div class="jo-memory-card">
+            <img src="./resources/img/ashanti.webp" alt="Ashanti" class="jo-memory-card-img">
+            <div class="jo-memory-card-text">
+              <p class="jo-memory-card-title">
+                Musambani Ashanti
+              </p>
+              <p>
+                Ch. Amal Silesian Harta <i class="material-icons">male</i> x
+                Bokima Loohoowo <i class="material-icons">female</i>
+              </p>
+              <p>21.5.2001 - 31.12.2012</p>
+              <p>Züchter: Marianne und Henry Schatterny</p>
+            </div>
+          </div>
+          <div class="jo-memory-card">
+            <img src="./resources/img/aika_kohlezechnung.webp" alt="Aika" class="jo-memory-card-img">
+            <div class="jo-memory-card-text">
+              <p class="jo-memory-card-title">
+                Aika Loohoowo
+              </p>
+              <p>
+                Ch. Ch. Gabaza`s Cabo <i class="material-icons">male</i> x
+                Magharibi Chana <i class="material-icons">female</i>
+              </p>
+              <p>25.10.1996 - 19.5.2009</p>
+              <p>Züchter: Uli Wagener</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="jo-divider"></div>
 
-      <section id="memory" class="jo-pl">memory</section>
-      <section id="contact" class="jo-pl">contact</section>
-      <section id="news" class="jo-pl">news</section>
+      <section id="contact" class="jo-contact">
+        <p class="jo-contact-title">Kontakt</p>
+        <div class="jo-contact-pane">
+          <div class="jo-contact-text">
+            <p>Heike Schulzke & Josef Heiss<br>
+            Südstraße 9<br>
+            74243 Langenbrettach</p>
+            <p>Telefon: 07946/989340 oder 01575/3580828</p>
+          </div>
+          <div class="jo-contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.402291021307!2d9.415683276950007!3d49.21189727576354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47983be590a263f7%3A0x1e305236b7c6bdce!2sS%C3%BCdstra%C3%9Fe%209%2C%2074243%20Langenbrettach!5e0!3m2!1sde!2sde!4v1732139817778!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <div class="jo-divider"></div>
+
+      <section id="news" class="jo-news">
+        <p class="jo-news-title">News</p>
+        <a class="jo-news-btn show" onclick="showNews()">
+          News anzeigen
+        </a>
+        <a class="jo-news-btn hide" onclick="hideNews()">
+          News ausblenden
+        </a>
+        <div class="jo-news-list">
+          <p>Im Augenblick gibt es nichts spannendes zu berichten.</p>
+        </div>
+      </section>
+
+      <div class="jo-divider"></div>
+
     </div>
-    <div class="jo-pl">footer</div>
+
+    <footer class="jo-footer">
+      <div class="jo-footer-nav">
+        <a href="imprint.html">Impressum</a>
+        <a href="privacy.html">Datenschutzerklärung</a>
+      </div>
+      <p>Copyright © 2024 Ushomi Musambani</p>
+    </footer>
+
   </div>
+
+
 
   <script src="./resources/vendors/js/jquery-3.7.1.min.js"></script>
   <script src="./resources/vendors/js/jquery.waypoints.min.js"></script>
