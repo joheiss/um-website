@@ -554,12 +554,16 @@ input[type=submit]:hover {
 }
 
 .jo-gallery {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: start;
   row-gap: 2.0em;
   align-items: center;
   width: 100%;
+}
+
+.jo-gallery-more {
+  display: none;
 }
 
 .jo-gallery.more {
@@ -574,7 +578,7 @@ input[type=submit]:hover {
 }
 
 .jo-gallery-btn {
-  min-width: 25%;
+  min-width: 50%;
   height: auto;
   padding: 1.0em 2.0em;
   text-align: center;
@@ -601,7 +605,7 @@ input[type=submit]:hover {
 }
 
 .jo-stories-gallery {
-  display: none;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;

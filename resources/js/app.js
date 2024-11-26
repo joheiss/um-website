@@ -46,14 +46,13 @@ function showLessAboutUs() {
 function showGallery() {
   const gallery = document.getElementsByClassName("jo-stories-gallery")[0];
   if (gallery) {
-    gallery.style.display = "flex";
     const showBtn = document.getElementsByClassName("jo-gallery-btn show")[0];
     showBtn.style.display = "none";
     const hideBtn = document.getElementsByClassName("jo-gallery-btn hide")[0];
     hideBtn.style.display = "inline-block";
   }
   // other galleries
-  const elements = document.getElementsByClassName("jo-memory-more");
+  const elements = document.getElementsByClassName("jo-gallery-more");
   for (const element of elements) {
     element.style.display = "flex";
   }
@@ -63,14 +62,13 @@ function showGallery() {
 function hideGallery() {
   const gallery = document.getElementsByClassName("jo-stories-gallery")[0];
   if (gallery) {
-    gallery.style.display = "none";
     const showBtn = document.getElementsByClassName("jo-gallery-btn show")[0];
     showBtn.style.display = "inline-block";
     const hideBtn = document.getElementsByClassName("jo-gallery-btn hide")[0];
     hideBtn.style.display = "none";
   }
   // other galleries
-  const elements = document.getElementsByClassName("jo-memory-more");
+  const elements = document.getElementsByClassName("jo-gallery-more");
   for (const element of elements) {
     element.style.display = "none";
   }

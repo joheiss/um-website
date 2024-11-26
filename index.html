@@ -480,6 +480,12 @@
               <a class="jo-about-story-btn" onclick="showMoreAboutUs()">
                 Mehr erfahren ...
               </a>
+              <a class="jo-gallery-btn show" onclick="showGallery()">
+                Galerie anzeigen
+              </a>
+              <a class="jo-gallery-btn hide" onclick="hideGallery()">
+                Galerie ausblenden
+              </a>
             </div>
           </div>
           <div class="jo-about-story even more">
@@ -497,9 +503,11 @@
                 bei uns ein. Sie war eine ruhige und sehr souveräne Vertreterin ihrer Rasse, manchmal auch
                 herausfordernd, doch wir verliebten uns restlos in ihre Eigenarten. Und so wurden wir alle mit dem
                 „Ridgeback-Virus“ infiziert!</p>
+              <!--
               <a class="jo-about-story-btn less" onclick="showLessAboutUs()">
                 Weniger
               </a>
+              -->
             </div>
           </div>
           <div class="jo-about-story odd more">
@@ -511,9 +519,11 @@
               <br>
               <p>Mehr über Musambani erfahren Sie unter:</p>
               <a href="http://www.musambani.de" target=”_blank” style="color:var(--accent-color);">www.musambani.de</a>
+              <!--
               <a class="jo-about-story-btn less" onclick="showLessAboutUs()">
                 Weniger
               </a>
+              -->
             </div>
           </div>
           <div class="jo-about-story even more">
@@ -530,24 +540,28 @@
               <br>
               <p>Falls Sie Interesse an einem unserer Welpen haben oder Fragen zur Rasse, kontaktieren Sie uns gerne.
                 Wir nehmen uns Zeit für Sie!</p>
+              <!--
               <a class="jo-about-story-btn less" onclick="showLessAboutUs()">
                 Weniger
               </a>
+              -->
             </div>
           </div>
         </div>
       </section>
 
-      <div class="jo-divider"></div>
+      <div class="jo-divider jo-gallery-more"></div>
 
-      <section id="gallery" class="jo-gallery">
-        <p class="jo-gallery-title">Galerien</p>
+      <section id="gallery" class="jo-gallery jo-gallery-more">
+        <p class="jo-gallery-title">Galerie</p>
+        <!--
         <a class="jo-gallery-btn show" onclick="showGallery()">
           Galerien anzeigen
         </a>
         <a class="jo-gallery-btn hide" onclick="hideGallery()">
           Galerien ausblenden
         </a>
+        -->
         <div id="jo-stories-gallery" class="jo-stories-gallery">
           <a data-fancybox="gallery-story"
              data-src="./resources/img/cookie_und_elena.webp"
@@ -582,9 +596,9 @@
         </div>
       </section>
 
-      <div class="jo-divider jo-memory-more"></div>
+      <div class="jo-divider"></div>
 
-      <section id="memory" class="jo-memory jo-memory-more">
+      <section id="memory" class="jo-memory">
         <p class="jo-memory-title">Unvergessen</p>
         <div class="jo-memory-list">
           <div class="jo-memory-card">

@@ -25,4 +25,6 @@
 - [ ] Seite auf Firefox testen
 - [ ] Seite auf Edge testen
 - [ ] Seite auf verschiedenen Lenovo Notebooks testen
+- [ ] Media queries testen: 576px, 768px, 992px, 1200px, and 1400px
+- [ ] Daten und Pedigree bei den Hunden eintragen
 
