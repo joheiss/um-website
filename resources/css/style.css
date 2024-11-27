@@ -413,10 +413,24 @@ input[type=submit]:hover {
 .jo-dog-data {
   display: flex;
   flex-direction: row;
+  column-gap: 2.0em;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+}
+
+.jo-dog-data-col {
+  width: 45%;
+  padding: 0 2.0em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.0em;
+  align-items: start;
+}
+
+.jo-dog-data-col:first-of-type {
+  border-right: 1px solid var(--text-color);
 }
 
 .jo-dog-stories {
@@ -477,6 +491,30 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
+.jo-dog-pedigree {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.0em;
+  justify-content: start;
+  align-items: center;
+}
+.jo-dog-pedigree-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.jo-dog-pedigree-link {
+  color: var(--accent-color);
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.jo-dog-pedigree-link:hover {
+  text-decoration: underline;
+}
+
 .jo-about-stories {
   display: flex;
   flex-direction: column;
@@ -534,6 +572,14 @@ input[type=submit]:hover {
   width: 45%;
 }
 
+.jo-about-story-btn-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
 .jo-about-story-btn {
   width: 50%;
   height: auto;
@@ -575,6 +621,14 @@ input[type=submit]:hover {
   font-size: 2.0em;
   font-weight: lighter;
   text-transform: uppercase;
+}
+
+.jo-gallery-btn-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 .jo-gallery-btn {
@@ -707,7 +761,7 @@ input[type=submit]:hover {
   justify-content: center;
   column-gap: 2.0em;
   row-gap: 2.0em;
-  align-items: start;
+  align-items: center;
 }
 
 .jo-contact-text {
@@ -728,7 +782,7 @@ input[type=submit]:hover {
 }
 
 .jo-contact-map {
-  width: 100%;
+  width: 45%;
   align-self: center;
 }
 
@@ -933,15 +987,21 @@ li {
   margin-left: 1.0em;
 }
 /* ---------------------------------------- */
-/* UP TO 1200PX - FULL PAGE WIDTH           */
+/* FROM 1601PX - FULL PAGE WIDTH           */
 /* ---------------------------------------- */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1601px) {
+
+}
+
+/* ---------------------------------------- */
+/* UP TO 1600PX - FULL PAGE WIDTH           */
+/* ---------------------------------------- */
+@media only screen and (max-width: 1600px) {
 
   header {
     height: 55vmin;
   }
 }
-
 /* ---------------------------------------- */
 /* UP TO 1200PX - FULL PAGE WIDTH           */
 /* ---------------------------------------- */
@@ -957,7 +1017,7 @@ li {
 }
 
 /* ---------------------------------------- */
-/* UP TO 1023PX - TABLETS AND SMALL PC      */
+/* UP TO 992PX - TABLETS AND SMALL PC      */
 /* ---------------------------------------- */
 @media only screen and (max-width: 1023px) {
 
@@ -1038,7 +1098,7 @@ li {
 }
 
 /* ---------------------------------------- */
-/* UP TO 767PX - PHONES AND SMALL TABLETS   */
+/* UP TO 768PX - PHONES AND SMALL TABLETS   */
 /* ---------------------------------------- */
 @media only screen and (max-width: 767px) {
 
@@ -1094,9 +1154,9 @@ li {
 }
 
 /* ---------------------------------------- */
-/* UP TO 600PX - ...             */
+/* UP TO 576PX - ...             */
 /* ---------------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
 
   header {
     height: 45vmin;
