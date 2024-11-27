@@ -71,11 +71,6 @@
         </div>
         -->
         <div class="jo-welcome-title">
-          <!--
-          <div class="jo-welcome-title1">Ushomi</div>
-          <div class="jo-welcome-divider"></div>
-          <div class="jo-welcome-title2">Musambani</div>
-          -->
           <img src="./resources/img/Ushomi-Musambani-Logo-2.png" alt="Ushomi Logo" class="jo-welcome-logo-img">
           <div class="jo-welcome-text">
             <p>Schön, dass du hier bist! Auf unserer Homepage kannst du uns und unsere Hunde ein
@@ -86,12 +81,15 @@
         </div>
       </section>
 
-      <div class="jo-divider"></div>
+      <div id="isamu" class="jo-divider"></div>
 
-      <section id="isamu" class="jo-fb-col">
+      <!---------------------------------------------->
+      <!-- ISAMU                                    -->
+      <!---------------------------------------------->
+      <section class="jo-fb-col">
         <div class="jo-dog-header">
           <img src="./resources/img/isamu_kopf_bearbeitet.png" alt="Isamu" class="jo-dog-main-img">
-          <div class="jo-fb-col>">
+          <div>
             <p class="jo-dog-kennel">Sabaku Inus</p>
             <p class="jo-dog-name">
               Isamu  <i class="material-icons" style="font-size: 48px;">male</i>
@@ -287,12 +285,15 @@
         </div>
       </section>
 
-      <div class="jo-divider"></div>
+      <div id="delali" class="jo-divider"></div>
 
-      <section id="delali" class="jo-fb-col">
+      <!---------------------------------------------->
+      <!-- DELALI                                   -->
+      <!---------------------------------------------->
+      <section class="jo-fb-col">
         <div class="jo-dog-header">
           <img src="./resources/img/lali_tor.webp" alt="Delali" class="jo-dog-main-img">
-          <div class="jo-fb-col>">
+          <div>
             <p class="jo-dog-name">
               Delali  <i class="material-icons" style="font-size: 48px;">female</i>
             </p>
@@ -417,12 +418,15 @@
         </div>
       </section>
 
-      <div class="jo-divider"></div>
+      <div id="cookie" class="jo-divider"></div>
 
-      <section id="cookie" class="jo-fb-col">
+      <!---------------------------------------------->
+      <!-- COOKIE                                   -->
+      <!---------------------------------------------->
+      <section class="jo-fb-col">
         <div class="jo-dog-header">
           <img src="./resources/img/cookie_tor.webp" alt="Cookie" class="jo-dog-main-img">
-          <div class="jo-fb-col>">
+          <div>
             <p class="jo-dog-kennel long">Kahawia DesiRRe Love Experience</p>
             <p class="jo-dog-name">
               Cookie  <i class="material-icons" style="font-size: 48px;">female</i>
@@ -540,35 +544,30 @@
         </div>
       </section>
 
-      <div class="jo-divider"></div>
+      <div id="aboutus" class="jo-divider"></div>
 
-      <section id="aboutus" class="jo-fb-col">
+      <!---------------------------------------------->
+      <!-- ABOUT                                    -->
+      <!---------------------------------------------->
+      <section class="jo-fb-col">
         <p class="jo-about-title">Über uns</p>
         <div class="jo-about-stories">
           <div class="jo-about-story odd">
             <img src="./resources/img/familie.webp" alt="Familie" class="jo-about-story-img">
-            <div class="jo-dog-story-text">
+            <div class="jo-about-story-text">
               <p>Das sind wir, Heike & Jo</p>
-              <p>… mit unseren Kindern Lisa, Lukas, Josy und Julia.</p>
+              <p>mit unseren Kindern Lisa, Lukas, Josy und Julia.</p>
               <br>
               <p>Wir leben mit unseren drei Ridgebacks, einem schwarzen Kater und unserem Pony in einem kleinen Dorf
                 in der Nähe von Heilbronn.</p>
-              <!--
-              <a class="jo-about-story-btn" onclick="showMoreAboutUs()">
-                Mehr erfahren ...
-              </a>
-              <a class="jo-gallery-btn show" onclick="showGallery()">
-                Galerie anzeigen
-              </a>
-              <a class="jo-gallery-btn hide" onclick="hideGallery()">
-                Galerie ausblenden
-              </a>
-              -->
             </div>
           </div>
           <div class="jo-about-story-btn-box">
-            <a class="jo-about-story-btn" onclick="showMoreAboutUs()">
+            <a class="jo-about-story-btn show" onclick="showMoreAboutUs()">
               Mehr erfahren ...
+            </a>
+            <a class="jo-about-story-btn hide" onclick="showLessAboutUs()">
+              Überspringen
             </a>
           </div>
           <div class="jo-about-story even more">
@@ -602,11 +601,6 @@
               <br>
               <p>Mehr über Musambani erfahren Sie unter:</p>
               <a href="http://www.musambani.net" target=”_blank” style="color:var(--accent-color);">www.musambani.net</a>
-              <!--
-              <a class="jo-about-story-btn less" onclick="showLessAboutUs()">
-                Weniger
-              </a>
-              -->
             </div>
           </div>
           <div class="jo-about-story even more">
@@ -623,11 +617,6 @@
               <br>
               <p>Falls Sie Interesse an einem unserer Welpen haben oder Fragen zur Rasse, kontaktieren Sie uns gerne.
                 Wir nehmen uns Zeit für Sie!</p>
-              <!--
-              <a class="jo-about-story-btn less" onclick="showLessAboutUs()">
-                Weniger
-              </a>
-              -->
             </div>
           </div>
         </div>
@@ -644,16 +633,12 @@
 
       <div class="jo-divider jo-gallery-more"></div>
 
+      <!---------------------------------------------->
+      <!-- GALERIE                                  -->
+      <!---------------------------------------------->
       <section id="gallery" class="jo-gallery jo-gallery-more">
         <p class="jo-gallery-title">Galerie</p>
-        <!--
-        <a class="jo-gallery-btn show" onclick="showGallery()">
-          Galerien anzeigen
-        </a>
-        <a class="jo-gallery-btn hide" onclick="hideGallery()">
-          Galerien ausblenden
-        </a>
-        -->
+
         <div id="jo-stories-gallery" class="jo-stories-gallery">
           <a data-fancybox="gallery-story"
              data-src="./resources/img/cookie_und_elena.webp"
@@ -690,6 +675,9 @@
 
       <div class="jo-divider"></div>
 
+      <!---------------------------------------------->
+      <!-- MEMORIAM                                 -->
+      <!---------------------------------------------->
       <section id="memory" class="jo-memory">
         <p class="jo-memory-title">Unvergessen</p>
         <div class="jo-memory-list">
@@ -699,10 +687,8 @@
               <p class="jo-memory-card-title">
                 Ave Caesar Ahilles - "Chilli"
               </p>
-              <p>
-                Ch. Maiden´s Kalahari Kandy <i class="material-icons">male</i> x
-                Podarok Iz Afriki Bliss Bounty <i class="material-icons">female</i>
-              </p>
+              <p>Ch. Maiden´s Kalahari Kandy <i class="material-icons">male</i></p>
+              <p>Podarok Iz Afriki Bliss Bounty <i class="material-icons">female</i></p>
               <p>21.8.2011 - 12.8.2022</p>
               <p>Züchter: Elena und Willy Johannson</p>
             </div>
@@ -713,10 +699,8 @@
               <p class="jo-memory-card-title">
                 Musambani Ashanti
               </p>
-              <p>
-                Ch. Amal Silesian Harta <i class="material-icons">male</i> x
-                Bokima Loohoowo <i class="material-icons">female</i>
-              </p>
+              <p>Ch. Amal Silesian Harta <i class="material-icons">male</i></p>
+              <p>Bokima Loohoowo <i class="material-icons">female</i></p>
               <p>21.5.2001 - 31.12.2012</p>
               <p>Züchter: Marianne und Henry Schatterny</p>
             </div>
@@ -727,10 +711,8 @@
               <p class="jo-memory-card-title">
                 Aika Loohoowo
               </p>
-              <p>
-                Ch. Ch. Gabaza`s Cabo <i class="material-icons">male</i> x
-                Magharibi Chana <i class="material-icons">female</i>
-              </p>
+              <p>Ch. Gabaza`s Cabo <i class="material-icons">male</i></p>
+              <p>Magharibi Chana <i class="material-icons">female</i></p>
               <p>25.10.1996 - 19.5.2009</p>
               <p>Züchter: Uli Wagener</p>
             </div>
@@ -740,6 +722,9 @@
 
       <div class="jo-divider"></div>
 
+      <!---------------------------------------------->
+      <!-- CONTACT                                  -->
+      <!---------------------------------------------->
       <section id="contact" class="jo-contact">
         <p class="jo-contact-title">Kontakt</p>
         <div class="jo-contact-pane">
@@ -757,6 +742,9 @@
 
       <div class="jo-divider"></div>
 
+      <!---------------------------------------------->
+      <!-- NEWS                                     -->
+      <!---------------------------------------------->
       <section id="news" class="jo-news">
         <p class="jo-news-title">News</p>
         <a class="jo-news-btn show" onclick="showNews()">
@@ -774,6 +762,9 @@
 
     </div>
 
+  <!---------------------------------------------->
+  <!-- FOOTER                                   -->
+  <!---------------------------------------------->
     <footer class="jo-footer">
       <div class="jo-footer-nav">
         <a href="imprint.html">Impressum</a>

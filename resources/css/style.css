@@ -9,6 +9,9 @@
   --accent-color: #ffbc99;
   --background-color: #000000;
   --text-color: #ffdec9;
+  --font-size-big: 96px;
+  --font-size-header: 32px;
+  --font-size-text: 16px;
 }
 
 /* ==========================================================================
@@ -25,7 +28,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Montserrat', 'Arial', sans-serif;
-  font-size: 1em;
+  font-size: var(--font-size-text);
   font-weight: 300;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
@@ -334,27 +337,7 @@ input[type=submit]:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  text-transform: uppercase;
   text-align: center;
-  background-color: transparent;
-}
-
-.jo-welcome-title1 {
-  font-size: 6.0em;
-  font-weight: bold;
-}
-
-.jo-welcome-divider {
-  width: 70%;
-  border-bottom: 1px solid var(--accent-color);
-  /* z-index: -1; */
-  margin-top: -20px;
-}
-
-.jo-welcome-title2 {
-  font-size: 4.0em;
-  font-weight: normal;
 }
 
 .jo-welcome-text {
@@ -369,7 +352,7 @@ input[type=submit]:hover {
 .jo-dog-header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  column-gap: 1.0em;
   justify-content: start;
   align-items: center;
 }
@@ -381,9 +364,18 @@ input[type=submit]:hover {
   margin-right: 4.0em;
 }
 
+.jo-dog-main-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 2.0em;
+}
+
 .jo-dog-kennel {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 2.0em;
+  font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -394,12 +386,12 @@ input[type=submit]:hover {
 
 .jo-dog-name {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 6.0em;
+  font-size: var(--font-size-big);
   font-weight: bold;
 }
 
 .jo-dog-gender-icon {
-  font-size: 6.0em;
+  font-size: var(--font-size-big);
   font-weight: bold;
 }
 
@@ -462,7 +454,7 @@ input[type=submit]:hover {
   width: 45%;
   height: auto;
   object-fit: cover;
-  margin-right: 4.0em;
+  /*margin-right: 4.0em;*/
 }
 
 .jo-dog-story-text {
@@ -525,7 +517,7 @@ input[type=submit]:hover {
 
 .jo-about-title {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 2.0em;
+  font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -552,12 +544,12 @@ input[type=submit]:hover {
   width: 45%;
   height: auto;
   object-fit: cover;
-  margin-right: 4.0em;
+  /*margin-right: 4.0em;*/
 }
 
 .jo-about-story-title {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 2.0em;
+  font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
   text-align: center;
@@ -570,6 +562,11 @@ input[type=submit]:hover {
   justify-content: start;
   align-items: start;
   width: 45%;
+}
+
+.jo-about-story-text > p {
+  align-self: center;
+  text-align: center;
 }
 
 .jo-about-story-btn-box {
@@ -599,6 +596,14 @@ input[type=submit]:hover {
   border: 1px solid var(--accent-color);
 }
 
+.jo-about-story-btn.show {
+  display: inline-block;
+}
+
+.jo-about-story-btn.hide {
+  display: none;
+}
+
 .jo-gallery {
   display: none;
   flex-direction: column;
@@ -618,7 +623,7 @@ input[type=submit]:hover {
 
 .jo-gallery-title {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 2.0em;
+  font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -690,7 +695,7 @@ input[type=submit]:hover {
 
 .jo-memory-title {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 2.0em;
+  font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -701,7 +706,7 @@ input[type=submit]:hover {
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 2.0em;
-  row-gap: 2.0em;
+  row-gap: 4.0em;
   align-items: center;
 }
 
@@ -724,17 +729,17 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  row-gap: 2.0em;
+  row-gap: 1.0em;
   align-items: center;
   width: 100%;
   text-align: center;
   font-family: 'Montserrat', 'Helvetica', sans-serif;
-  font-size: 0.75em;
+  font-size: 1.0em;
   font-weight: lighter;
 }
 
 .jo-memory-card-title {
-  font-size: 1.0em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -749,12 +754,13 @@ input[type=submit]:hover {
 
 .jo-contact-title {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 2.0em;
+  font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
 }
 
 .jo-contact-pane {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -782,8 +788,21 @@ input[type=submit]:hover {
 }
 
 .jo-contact-map {
-  width: 45%;
-  align-self: center;
+  /*width: 45%;*/
+  /*align-self: center;*/
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+}
+
+.jo-contact-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .jo-news{
@@ -801,7 +820,7 @@ input[type=submit]:hover {
 
 .jo-news-title {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 2.0em;
+  font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -1001,6 +1020,11 @@ li {
   header {
     height: 55vmin;
   }
+
+  .jo-memory-list {
+    flex-wrap: nowrap;
+  }
+
 }
 /* ---------------------------------------- */
 /* UP TO 1200PX - FULL PAGE WIDTH           */
@@ -1014,13 +1038,19 @@ li {
   .jo-nav-main {
     display: block;
   }
+
+
 }
 
 /* ---------------------------------------- */
 /* UP TO 992PX - TABLETS AND SMALL PC      */
 /* ---------------------------------------- */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 992px) {
 
+  :root {
+    --font-size-big: 80px;
+
+  }
   header {
     height: 47vmin;
   }
@@ -1029,6 +1059,18 @@ li {
     width: 50%;
     height: auto;
     object-fit: cover;
+  }
+
+  .jo-dog-kennel.long {
+    font-size: 1.6em;
+  }
+
+  .jo-dog-parent {
+    font-size: 1.0em;
+  }
+
+  .jo-dog-gallery-img-small {
+    width: 180px;
   }
 }
 
@@ -1072,8 +1114,8 @@ li {
   }
 
   .jo-dog-story-text p {
-    margin-left: -2.0em;
-    margin-right: 2.0em;
+    /*margin-left: -2.0em;*/
+    /*margin-right: 2.0em;*/
   }
 
   .jo-about-story {
@@ -1091,16 +1133,20 @@ li {
     width: 100%;
   }
 
-  .jo-contact-map {
-    width: 80%;
-    align-self: center;
+  .jo-contact-pane {
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 2.0em;
+    align-items: center;
   }
+
 }
 
 /* ---------------------------------------- */
 /* UP TO 768PX - PHONES AND SMALL TABLETS   */
 /* ---------------------------------------- */
 @media only screen and (max-width: 767px) {
+
 
   .jo-nav {
     padding: 2.0em 2.0em 0 4.0em;
@@ -1119,7 +1165,7 @@ li {
     display: none;
     float: left;
     margin-top: 30px;
-    margin-left: 25px;
+    margin-left: 100px;
   }
 
   .jo-nav-main li {
@@ -1151,22 +1197,56 @@ li {
   .sticky .jo-nav-icon-mobile i {
     color: #555;
   }
+
+  .jo-welcome-text {
+    width: 80%;
+  }
+
+  .jo-dog-data {
+    flex-direction: column;
+    row-gap: 2.0em;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .jo-dog-data-col {
+    width: 100%;
+  }
+
+  .jo-dog-data-col:first-of-type {
+    padding-bottom: 2.0em;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+  }
+
 }
 
 /* ---------------------------------------- */
-/* UP TO 576PX - ...             */
+/* UP TO 576PX - ...                        */
 /* ---------------------------------------- */
 @media only screen and (max-width: 576px) {
+
+  :root {
+    --font-size-big: 84px;
+  }
 
   header {
     height: 45vmin;
   }
 
-  .jo-welcome-text p {
-    font-size: 80%;
+  .jo-nav-logo {
+    height: 3.5em;
   }
+  .jo-welcome-text p {
+    font-size: 1.0em;
+  }
+
   .jo-dog-gallery-img-small {
-    width: 100px;
+    width: 80px;
+  }
+
+  .jo-stories-gallery-img-small {
+    width: 90px;
   }
 }
 /* ---------------------------------------- */
@@ -1174,12 +1254,37 @@ li {
 /* ---------------------------------------- */
 @media only screen and (max-width: 500px) {
 
+  :root {
+    --font-size-text: 14px;
+  }
+
+  .jo-content {
+    margin: 0 2.0em;
+  }
+
   header {
     height: 45vmin;
+  }
+
+  .jo-nav-logo {
+    height: 3.0em;
+  }
+
+  .jo-nav-main li a,
+  .jo-nav-main li a:link,
+  .jo-nav-main li a:visited {
+    padding: 5px 0;
   }
 
   .jo-page {
     margin: 0 20px 0 20px;
   }
 
+  .jo-welcome-text {
+    width: 90%;
+  }
+
+  .jo-dog-parent {
+    font-size: 1.0em;
+  }
 }

@@ -11,6 +11,7 @@ function toggleAcc(id) {
           nextSibling.style.display = "none";
         } else {
           nextSibling.style.display = "block";
+          nextSibling.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
           // make sure all other panels are closed as well
           const otherPanels = document.getElementsByClassName("acc-body");
           for (const panel of otherPanels) {
@@ -32,6 +33,12 @@ function showMoreAboutUs() {
   for (const story of stories) {
     story.style.display = "flex";
   }
+  if (stories && stories.length > 0) {
+    const showBtn = document.getElementsByClassName("jo-about-story-btn show")[0];
+    showBtn.style.display = "none";
+    const hideBtn = document.getElementsByClassName("jo-about-story-btn hide")[0];
+    hideBtn.style.display = "inline-block";
+  }
 }
 
 // handle less button
@@ -39,6 +46,12 @@ function showLessAboutUs() {
   const stories = document.getElementsByClassName("more");
   for (const story of stories) {
     story.style.display = "none";
+  }
+  if (stories && stories.length > 0) {
+    const showBtn = document.getElementsByClassName("jo-about-story-btn show")[0];
+    showBtn.style.display = "inline-block";
+    const hideBtn = document.getElementsByClassName("jo-about-story-btn hide")[0];
+    hideBtn.style.display = "none";
   }
 }
 
@@ -56,6 +69,9 @@ function showGallery() {
   for (const element of elements) {
     element.style.display = "flex";
   }
+  // scroll gallery into view
+  console.log("--- scrollIntoView ---");
+  gallery.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
 
   // hide more button
