@@ -17,7 +17,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -894,12 +896,11 @@ input[type=submit]:hover {
 /* ---------------------------------------- */
 .fancybox__slide.has-caption {
   flex-direction: column;
+  row-gap: 2.5em;
 }
 
 .fancybox__caption {
-  max-width: 250px;
-  color: var(--text-color) !important;
-  margin-top: 2.5em !important;
+  color: var(--text-color);
 }
 
 /* ---------------------------------------- */
