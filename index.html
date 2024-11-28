@@ -40,16 +40,15 @@
         <img class="jo-nav-logo" src="./resources/img/Ushomi-Musambani-Logo.png" alt="Ushomi Logo">
       </a>
       <ul class="jo-nav-main js--nav-main">
-        <li><a href="#isamu">Isamu</a></li>
-        <li><a href="#delali">Delali</a></li>
-        <li><a href="#cookie">Cookie</a></li>
-        <li><a href="#aboutus">Über uns</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a class="js--nav-link-mobile" href="#isamu">Isamu</a></li>
+        <li><a class="js--nav-link-mobile" href="#delali">Delali</a></li>
+        <li><a class="js--nav-link-mobile" href="#cookie">Cookie</a></li>
+        <li><a class="js--nav-link-mobile" href="#aboutus">Über uns</a></li>
+        <li><a class="js--nav-link-mobile" href="#contact">Kontakt</a></li>
+        <li><a class="js--nav-link-mobile" href="#news">News</a></li>
       </ul>
       <a class="jo-nav-icon-mobile js--nav-icon-mobile">
         <i class="ion-navicon-round"></i>
-
       </a>
     </div>
   </nav>
@@ -109,8 +108,10 @@
           <div>
             <input type="radio" name="acc" id="acc11" onclick="toggleAcc('acc11')">
             <label for="acc11">
-              <i class="material-icons">analytics</i>
-               Daten
+              <span class="jo-acc-label-text">
+                <i class="material-icons">analytics</i>
+                 Daten
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-fb-row jo-dog-data">
@@ -150,8 +151,10 @@
           <div>
             <input type="radio" name="acc" id="acc12" onclick="toggleAcc('acc12')">
             <label for="acc12">
-              <i class="material-icons">pets</i>
-               Über Isamu
+              <span class="jo-acc-label-text">
+                <i class="material-icons">pets</i>
+                 Über Isamu
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-dog-stories">
@@ -217,8 +220,11 @@
           </div>
           <div>
             <input type="radio" name="acc" id="acc13" onclick="toggleAcc('acc13')">
-            <label for="acc13"><i class="material-icons">photo_library</i>
-              Galerie
+            <label for="acc13">
+              <span class="jo-acc-label-text">
+                <i class="material-icons">photo_library</i>
+                Galerie
+              </span>
             </label>
             <div class="acc-body">
               <div id="jo-dog-gallery-isamu" class="jo-dog-gallery">
@@ -272,14 +278,17 @@
           </div>
           <div>
             <input type="radio" name="acc" id="acc14" onclick="toggleAcc('acc14')">
-            <label for="acc14"><i class="material-icons">description</i>
-              Pedigree
+            <label for="acc14">
+              <span class="jo-acc-label-text">
+                <i class="material-icons">description</i>
+                Pedigree
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-dog-pedigree">
                 <img src="./resources/img/isamu_pdf.webp" alt="Isamu Pedigree" class="jo-dog-pedigree-img">
-                <a href="https://rhodesianridgeback.pedigreedatabaseonline.com/pdf.php?id=34662&SId=2733&DId=22880&page=pedigree&type=0&page=pedigree"
-                   target="_blank" class="jo-dog-pedigree-link">Eintrag in der RR Pedigree Database (Registrierung erforderlich)</a>
+                <a href="https://rhodesianridgeback.pedigreedatabaseonline.com/en/Sabaku-Inus-Isamu/pedigree/34662/i"
+                   target="_blank" class="jo-dog-pedigree-link">Eintrag in der RR Pedigree Database</a>
               </div>
             </div>
           </div>
@@ -313,8 +322,10 @@
           <div>
             <input type="radio" name="acc" id="acc21" onclick="toggleAcc('acc21')">
             <label for="acc21">
-              <i class="material-icons">analytics</i>
-              Daten
+              <span class="jo-acc-label-text">
+                <i class="material-icons">analytics</i>
+                Daten
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-fb-row jo-dog-data">
@@ -344,8 +355,10 @@
           <div>
             <input type="radio" name="acc" id="acc22" onclick="toggleAcc('acc22')">
             <label for="acc22">
-              <i class="material-icons">pets</i>
-              Über Delali
+             <span class="jo-acc-label-text">
+                <i class="material-icons">pets</i>
+                Über Delali
+             </span>
             </label>
             <div class="acc-body">
               <div class="jo-dog-stories">
@@ -365,8 +378,11 @@
           </div>
           <div>
             <input type="radio" name="acc" id="acc23" onclick="toggleAcc('acc23')">
-            <label for="acc23"><i class="material-icons">photo_library</i>
-              Galerie
+            <label for="acc23">
+              <span class="jo-acc-label-text">
+                <i class="material-icons">photo_library</i>
+                Galerie
+              </span>
             </label>
             <div class="acc-body">
               <div id="jo-dog-gallery-delali" class="jo-dog-gallery">
@@ -405,14 +421,17 @@
           </div>
           <div>
             <input type="radio" name="acc" id="acc24" onclick="toggleAcc('acc24')">
-            <label for="acc24"><i class="material-icons">description</i>
-              Pedigree
+            <label for="acc24">
+              <span class="jo-acc-label-text">
+                <i class="material-icons">description</i>
+                Pedigree
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-dog-pedigree">
                 <img src="./resources/img/lali_pedigree_PNG.webp" alt="Delali Pedigree" class="jo-dog-pedigree-img">
-                <a href="https://rhodesianridgeback.pedigreedatabaseonline.com/pdf.php?id=33339&SId=93&DId=16710&page=pedigree&type=0&page=pedigree"
-                   target="_blank" class="jo-dog-pedigree-link">Eintrag in der RR Pedigree Database (Registrierung erforderlich)</a>
+                <a href="https://rhodesianridgeback.pedigreedatabaseonline.com/en/Delali-Etana-Of-Kitani/pedigree/33339/i"
+                   target="_blank" class="jo-dog-pedigree-link">Eintrag in der RR Pedigree Database</a>
               </div>
             </div>
           </div>
@@ -446,8 +465,10 @@
           <div>
             <input type="radio" name="acc" id="acc31" onclick="toggleAcc('acc31')">
             <label for="acc31">
-              <i class="material-icons">analytics</i>
-              Daten
+              <span class="jo-acc-label-text">
+                <i class="material-icons">analytics</i>
+                Daten
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-fb-row jo-dog-data">
@@ -477,15 +498,17 @@
           <div>
             <input type="radio" name="acc" id="acc32" onclick="toggleAcc('acc32')">
             <label for="acc32">
-              <i class="material-icons">pets</i>
-              Über Cookie
+              <span class="jo-acc-label-text">
+                <i class="material-icons">pets</i>
+                Über Cookie
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-dog-stories">
                 <div class="jo-dog-story odd">
                   <img src="./resources/img/cookie_baeume.webp" alt="Delali" class="jo-dog-story-img">
                   <div class="jo-dog-story-text">
-                    <p>Cookie ist eine aufgeweckte, lustige Hündin. Es schein, als hätte sie immer ein Lächeln im
+                    <p>Cookie ist eine aufgeweckte, lustige Hündin. Es scheint, als hätte sie immer ein Lächeln im
                       Gesicht. Sie lernt schnell und hat sich problemlos bei uns eingelebt.</p>
                   </div>
                 </div>
@@ -494,8 +517,11 @@
           </div>
           <div>
             <input type="radio" name="acc" id="acc33" onclick="toggleAcc('acc33')">
-            <label for="acc33"><i class="material-icons">photo_library</i>
-              Galerie
+            <label for="acc33">
+              <span class="jo-acc-label-text">
+                <i class="material-icons">photo_library</i>
+                Galerie
+              </span>
             </label>
             <div class="acc-body">
               <div id="jo-dog-gallery-cookie" class="jo-dog-gallery">
@@ -531,14 +557,17 @@
           </div>
           <div>
             <input type="radio" name="acc" id="acc34" onclick="toggleAcc('acc34')">
-            <label for="acc34"><i class="material-icons">description</i>
-              Pedigree
+            <label for="acc34">
+              <span class="jo-acc-label-text">
+                <i class="material-icons">description</i>
+                Pedigree
+              </span>
             </label>
             <div class="acc-body">
               <div class="jo-dog-pedigree">
                 <img src="./resources/img/cookie_pedigree_PNG.webp" alt="Cookie Pedigree" class="jo-dog-pedigree-img">
                 <a href="https://rhodesianridgeback.pedigreedatabaseonline.com/en/Kahawia-Desirre-Love-Experience/pedigree/53391/i"
-                   target="_blank" class="jo-dog-pedigree-link">Eintrag in der RR Pedigree Database (Registrierung erforderlich)</a>
+                   target="_blank" class="jo-dog-pedigree-link">Eintrag in der RR Pedigree Database</a>
               </div>
             </div>
           </div>
@@ -561,16 +590,26 @@
               <br>
               <p>Wir leben mit unseren drei Ridgebacks, einem schwarzen Kater und unserem Pony in einem kleinen Dorf
                 in der Nähe von Heilbronn.</p>
+              <div class="jo-about-story-btn-box">
+                <a class="jo-about-story-btn show" onclick="showMoreAboutUs()">
+                  Mehr erfahren ...
+                </a>
+                <a class="jo-about-story-btn hide" onclick="showLessAboutUs()">
+                  Weniger erfahren ...
+                </a>
+              </div>
             </div>
           </div>
+          <!--
           <div class="jo-about-story-btn-box">
             <a class="jo-about-story-btn show" onclick="showMoreAboutUs()">
               Mehr erfahren ...
             </a>
             <a class="jo-about-story-btn hide" onclick="showLessAboutUs()">
-              Überspringen
+              Weniger ...
             </a>
           </div>
+          -->
           <div class="jo-about-story even more">
             <img src="./resources/img/heike_mit_brille_und_lali.webp" alt="Heike und Lali" class="jo-about-story-img">
             <div class="jo-dog-story-text">
@@ -599,6 +638,10 @@
               <p class="jo-about-story-title">So ging es weiter</p>
               <p>Auch meine Eltern waren von Aika und der Rasse so fasziniert, dass sie sich eineinhalb Jahre später
                 eine Halbschwester von Aika holten. Mit ihr gründeten sie 2001 ihren eigenen Kennel „Musambani“.</p>
+              <br>
+              <p>2004 folgten wir diesem Beispiel und gründeten unseren eigenen Kennel „Ushomi-Musambani“.
+                Der Name „Ushomi“, was auf Swahili „Freund“ bedeutet, steht für die Verbundenheit zu
+                meinen Eltern und ihrer Zuchtlinie.</p>
               <br>
               <p>Mehr über Musambani erfahren Sie unter:</p>
               <a href="http://www.musambani.net" target=”_blank” style="color:var(--accent-color);">www.musambani.net</a>
@@ -654,7 +697,7 @@
             <img src="./resources/img/cookie_baeume.webp" alt="Cookie" class="jo-stories-gallery-img-small" />
           </a>
           <a data-fancybox="gallery-story"
-             data-src="./resources/img/isamu_heike_lisa.webp"
+             data-src="./resources/img/Isamu_heike_lisa.webp"
              data-caption="Zwei Hunde und zwei Leoparden im Stadtpark."
           >
             <img src="./resources/img/Isamu_heike_lisa.webp" alt="Heike und Lisa" class="jo-stories-gallery-img-small"/>
@@ -733,7 +776,7 @@
             <p>Heike Schulzke & Josef Heiss<br>
             Südstraße 9<br>
             74243 Langenbrettach</p>
-            <p>Telefon: 07946/989340 oder 01575/3580828</p>
+            <p class="jo-contact-phone">Telefon: 07946/989340 oder 01575/3580828</p>
           </div>
           <div class="jo-contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.402291021307!2d9.415683276950007!3d49.21189727576354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47983be590a263f7%3A0x1e305236b7c6bdce!2sS%C3%BCdstra%C3%9Fe%209%2C%2074243%20Langenbrettach!5e0!3m2!1sde!2sde!4v1732139817778!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -775,8 +818,6 @@
     </footer>
 
   </div>
-
-
 
   <script src="./resources/vendors/js/jquery-3.7.1.min.js"></script>
   <script src="./resources/vendors/js/jquery.waypoints.min.js"></script>

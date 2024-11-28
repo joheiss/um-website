@@ -3,12 +3,14 @@ function toggleAcc(id) {
   // get radiobutton for accordion toggle
   const acc = document.getElementById(id);
   // if the acccordion panel is already open, find the accordion body element and hide it if needed
+  console.log("Accordion panel checked: " + acc.checked);
   if (acc.checked) {
     let nextSibling = acc.nextElementSibling;
     while(nextSibling) {
       if (!!nextSibling.classList && nextSibling.classList.contains("acc-body")) {
         if (nextSibling.style.display === "block") {
           nextSibling.style.display = "none";
+          acc.checked = false;
         } else {
           nextSibling.style.display = "block";
           nextSibling.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
@@ -70,8 +72,8 @@ function showGallery() {
     element.style.display = "flex";
   }
   // scroll gallery into view
-  console.log("--- scrollIntoView ---");
-  gallery.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  const galleryTitle = document.getElementsByClassName("jo-gallery-title")[0];
+  galleryTitle.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
 
   // hide more button
@@ -109,3 +111,5 @@ function hideNews() {
   const hideBtn = document.getElementsByClassName("jo-news-btn hide")[0];
   hideBtn.style.display = "none";
 }
+
+
