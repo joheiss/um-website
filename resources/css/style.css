@@ -9,6 +9,7 @@
   --accent-color: #ffbc99;
   --background-color: #000000;
   --text-color: #ffdec9;
+  --menu-color: #ffffff;
   --font-size-big: 96px;
   --font-size-header: 32px;
   --font-size-text: 16px;
@@ -185,14 +186,15 @@ textarea {
 /* ---------------------------------------- */
 
 header {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
-  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
   background-size: contain;
-  background-position: top center;
+  background-position-y: 30px;
+  background-position-x: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 55vmin;
+  height: 60vmin;
   z-index: -1;
 }
 
@@ -251,12 +253,13 @@ input[type=submit]:hover {
 
 .jo-nav-main li {
   display: inline-block;
+  color: var(--menu-color);
   margin-left: 30px;
 }
 
 .jo-nav-main li a:link,
 .jo-nav-main li a:visited {
-  color: var(--accent-color);
+  color: var(--menu-color);
   padding: 8px 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -272,12 +275,13 @@ input[type=submit]:hover {
 }
 
 .jo-nav-icon-mobile {
+  color: var(--menu-color);
   display: none;
 }
 
 .jo-page {
-  width: 100vw;
-  height: 100vh;
+  /*width: 100vw;*/
+  /*height: 100vh;*/
 }
 
 .jo-content {
@@ -346,7 +350,7 @@ input[type=submit]:hover {
   width: 50%;
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 1.2em;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   text-transform: none;
   margin-top: 2.5em;
 }
@@ -400,9 +404,10 @@ input[type=submit]:hover {
 .jo-dog-parent {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 1.2em;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   margin: 20px 0 20px 0;
 }
+
 
 .jo-dog-data {
   display: flex;
@@ -572,6 +577,7 @@ input[type=submit]:hover {
 }
 
 .jo-about-story-btn-box {
+  margin-top: 2.0em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -581,21 +587,25 @@ input[type=submit]:hover {
 
 .jo-about-story-btn {
   width: 50%;
-  height: auto;
-  padding: 1.0em 2.0em;
+  color: var(--text-color);
   text-align: center;
-  align-self: center;
-  background-color: var(--base-color);
-  color: var(--background-color);
-  border: 1px solid var(--base-color);
-  border-radius: 1.5em;
-  margin-top: 2.0em;
+  text-decoration: underline;
+  /*height: auto;*/
+  /*padding: 1.0em 2.0em;*/
+  /*text-align: center;*/
+  /*align-self: center;*/
+  /*background-color: var(--base-color);*/
+  /*color: var(--background-color);*/
+  /*border: 1px solid var(--base-color);*/
+  /*border-radius: 1.5em;*/
+  /*margin-top: 2.0em;*/
   cursor: pointer;
 }
 
 .jo-about-story-btn:hover {
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  /*background-color: var(--accent-color);*/
+  color: var(--accent-color);
+  /*border: 1px solid var(--accent-color);*/
 }
 
 .jo-about-story-btn.show {
@@ -735,9 +745,9 @@ input[type=submit]:hover {
   align-items: center;
   width: 100%;
   text-align: center;
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 1.0em;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
 }
 
 .jo-memory-card-title {
@@ -779,14 +789,18 @@ input[type=submit]:hover {
   row-gap: 1.0em;
   align-items: center;
   text-align: center;
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 1.0em;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
 }
 
 .jo-contact-header {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.jo-contact-phone {
+  color: var(--text-color);
 }
 
 .jo-contact-map {
@@ -868,9 +882,9 @@ input[type=submit]:hover {
   row-gap: 2.0em;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 1.0em;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
 }
 
 .jo-footer-nav {
@@ -930,8 +944,12 @@ input[type=submit]:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /*display: flex;*/
+  /*justify-content: start;*/
+  /*column-gap: 0.5em;*/
+  /*align-items: center;*/
   display: block;
-  padding: 15px;
+  padding: 16px;
   width: 100%;
   color: var(--text-color);
   font-weight: 400;
@@ -939,9 +957,27 @@ input[type=submit]:hover {
   z-index: 100;
 }
 
+.jo-acc-label-text {
+  display: flex;
+  justify-content: start;
+  column-gap: 10px;
+  align-items: center;
+}
+
+/*.jo-acc-container label > i {*/
+/*  vertical-align: middle*/
+/*}*/
+
 .jo-acc-container input{
   display: none;
 }
+
+/*.jo-acc-container label:after {*/
+/*  font-family: "Material Icons", sans-serif;*/
+/*  content: '\e313';*/
+/*  font-weight: bolder;*/
+/*  justify-items: end;*/
+/*}*/
 
 .jo-acc-container label:before {
   font-family: "Material Icons", sans-serif;
@@ -953,6 +989,13 @@ input[type=submit]:hover {
 .jo-acc-container input:checked+label {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
+/*.jo-acc-container input:checked+label:after {*/
+/*  font-family: "Material Icons", sans-serif;*/
+/*  content: "\e5cd";*/
+/*  align-self: end;*/
+/*  transition: 0.5s;*/
+/*}*/
 
 .jo-acc-container input:checked+label:before {
   font-family: "Material Icons", sans-serif;
@@ -990,14 +1033,14 @@ h1 {
 }
 
 h2 {
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   margin: 1.0em 0;
 }
 
 h3 {
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   margin: 1.0em 0;
@@ -1011,6 +1054,10 @@ li {
 /* ---------------------------------------- */
 @media only screen and (min-width: 1601px) {
 
+  header {
+    background-size: 1536px auto;
+    height: 60vmin;
+  }
 }
 
 /* ---------------------------------------- */
@@ -1019,7 +1066,8 @@ li {
 @media only screen and (max-width: 1600px) {
 
   header {
-    height: 55vmin;
+    background-size: 1280px auto;
+    height: 60vmin;
   }
 
   .jo-memory-list {
@@ -1033,7 +1081,8 @@ li {
 @media only screen and (max-width: 1200px) {
 
   header {
-    height: 50vmin;
+    background-size: 1024px auto;
+    height: 55vmin;
   }
 
   .jo-nav-main {
@@ -1053,7 +1102,8 @@ li {
 
   }
   header {
-    height: 47vmin;
+    background-size: contain;
+    height: 50vmin;
   }
 
   .jo-dog-main-img {
@@ -1114,11 +1164,6 @@ li {
     width: 100%;
   }
 
-  .jo-dog-story-text p {
-    /*margin-left: -2.0em;*/
-    /*margin-right: 2.0em;*/
-  }
-
   .jo-about-story {
     flex-direction: column;
     justify-content: center;
@@ -1134,6 +1179,9 @@ li {
     width: 100%;
   }
 
+  .jo-memory-list {
+    flex-wrap: wrap;
+  }
   .jo-contact-pane {
     flex-direction: column;
     justify-content: start;
@@ -1150,7 +1198,7 @@ li {
 
 
   .jo-nav {
-    padding: 2.0em 2.0em 0 4.0em;
+    padding: 2.0em 2.0em 0 2.0em;
   }
 
   .jo-nav-logo {
@@ -1165,13 +1213,19 @@ li {
   .jo-nav-main {
     display: none;
     float: left;
-    margin-top: 30px;
-    margin-left: 100px;
+    /*margin-top: 30px;*/
+    /*margin-left: 100px;*/
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--background-color);
+    opacity: 0.9;
   }
 
   .jo-nav-main li {
     display: block;
-    line-height: 0.8em;
+    line-height: 1.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
   }
 
   .jo-nav-main li a:link,
@@ -1196,7 +1250,7 @@ li {
   }
 
   .sticky .jo-nav-icon-mobile i {
-    color: #555;
+    color: #ffffff;
   }
 
   .jo-welcome-text {
@@ -1229,10 +1283,15 @@ li {
 
   :root {
     --font-size-big: 84px;
+    --font-size-text: 14px;
   }
 
   header {
     height: 45vmin;
+  }
+
+  .jo-content {
+    margin: 0 3.0em;
   }
 
   .jo-nav-logo {
@@ -1249,9 +1308,53 @@ li {
   .jo-stories-gallery-img-small {
     width: 90px;
   }
+
+  .jo-about-story-btn {
+    width: 60%;
+  }
+
+  .jo-gallery-btn {
+    width: 60%;
+  }
+
+
+  .jo-memory-list {
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 4.0em;
+    align-items: center;
+  }
+
+  .jo-news-btn {
+    width: 60%;
+  }
+
 }
 /* ---------------------------------------- */
 /* UP TO 500X - SMALL PHONES               */
+/* ---------------------------------------- */
+@media only screen and (max-width: 500px) {
+
+  :root {
+    --font-size-big: 72px;
+    --font-size-text: 14px;
+  }
+
+  .jo-dog-gallery-img-small {
+    width: 70px;
+  }
+
+  .jo-about-story-btn {
+    width: 70%;
+  }
+
+  .jo-gallery-btn {
+    width: 70%;
+  }
+}
+
+/* ---------------------------------------- */
+/* UP TO 400PX - SMALL PHONES               */
 /* ---------------------------------------- */
 @media only screen and (max-width: 500px) {
 
@@ -1275,10 +1378,6 @@ li {
   .jo-nav-main li a:link,
   .jo-nav-main li a:visited {
     padding: 5px 0;
-  }
-
-  .jo-page {
-    margin: 0 20px 0 20px;
   }
 
   .jo-welcome-text {
