@@ -1134,6 +1134,10 @@ li {
     height: 45vmin;
   }
 
+  .jo-nav-main li {
+    margin-left: 20px;
+  }
+
   .jo-dog-header {
     flex-direction: column;
     justify-content: start;
@@ -1213,8 +1217,6 @@ li {
   .jo-nav-main {
     display: none;
     float: left;
-    /*margin-top: 30px;*/
-    /*margin-left: 100px;*/
     padding: 20px 0;
     width: 100%;
     background-color: var(--background-color);
