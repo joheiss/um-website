@@ -20,7 +20,9 @@ jobs:
           aws-region: eu-central-1
       - name: Upload html files to S3 bucket
         run: |
-          aws s3 cp . s3://dev.ushomi-musambani.de/ --exclude "*" --include "*.html" --exclude "*/*"
+          aws s3 cp ./index.html s3://dev.ushomi-musambani.de/
+          aws s3 cp ./imprint.html s3://dev.ushomi-musambani.de/
+          aws s3 cp ./privacy.html s3://dev.ushomi-musambani.de/
           aws s3 cp ./favicon.ico s3://dev.ushomi-musambani.de/
           aws s3 cp ./robots.txt s3://dev.ushomi-musambani.de/
-          aws s3 cp ./resources s3://dev.ushomi-musambani.de/ --recursive
+          aws s3 cp ./resources s3://dev.ushomi-musambani.de/resources/ --recursive
