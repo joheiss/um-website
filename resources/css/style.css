@@ -990,13 +990,6 @@ input[type=submit]:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-/*.jo-acc-container input:checked+label:after {*/
-/*  font-family: "Material Icons", sans-serif;*/
-/*  content: "\e5cd";*/
-/*  align-self: end;*/
-/*  transition: 0.5s;*/
-/*}*/
-
 .jo-acc-container input:checked+label:before {
   font-family: "Material Icons", sans-serif;
   content: "\e5cd";
