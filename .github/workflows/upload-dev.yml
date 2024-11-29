@@ -1,0 +1,26 @@
+name: Upload to S3 dev
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@V2
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-yes: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+      - name: Upload html files to S3 bucket
+        run: |
+          aws s3 cp *.html s3//dev.ushomi-musambani.de/
+          aws s3 cp favicon.ico s3//dev.ushomi-musambani.de/
+          aws s3 cp robots.txt s3//dev.ushomi-musambani.de/
+          aws s3 cp ./resources s3//dev.ushomi-musambani.de/ --recursive
