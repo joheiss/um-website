@@ -23,6 +23,13 @@ jobs:
           aws s3 cp ./index.html s3://test.ushomi-musambani.de/
           aws s3 cp ./imprint.html s3://test.ushomi-musambani.de/
           aws s3 cp ./privacy.html s3://test.ushomi-musambani.de/
+          aws s3 cp ./favicon-16x16.png s3://test.ushomi-musambani.de/
+          aws s3 cp ./favicon-32x32.png s3://test.ushomi-musambani.de/
           aws s3 cp ./favicon.ico s3://test.ushomi-musambani.de/
+          aws s3 cp ./android-chrome-192x192.png s3://test.ushomi-musambani.de/
+          aws s3 cp ./android-chrome-512x512.png s3://test.ushomi-musambani.de/
+          aws s3 cp ./apple-touch-icon.png s3://test.ushomi-musambani.de/
+          aws s3 cp ./icon.png s3://test.ushomi-musambani.de/
+          aws s3 cp ./site.manifest s3://test.ushomi-musambani.de/
           aws s3 cp ./robots.txt s3://test.ushomi-musambani.de/
           aws s3 cp ./resources s3://test.ushomi-musambani.de/resources/ --recursive
