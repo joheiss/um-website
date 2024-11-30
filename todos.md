@@ -6,21 +6,20 @@
 - [ ] Sprache "Englisch" bzw. "Deutsch" (Flagge) zu Menü hinzufügen
 - [x] Abschnitt "Unvergessen" hinzufügen
 - [x] Abschnitt "Kontakt" hinzufügen
-- [ ] Icon-Font auf "Ionicons" umstellen
 - [x] Abschnitt "News" hinzufügen
 - [x] Abschnitt "Impressum" hinzufügen
 - [x] Abschnitt "Datenschutzerklärung" hinzufügen
 - [x] Footer hinzufügen
-- [ ] Google-Fonts lokal speichern
+- [x] Google-Fonts lokal speichern
 - [x] Seite ohne NodeJs und Webpack testen
 - [ ] Favicon hinzufügen
 - [ ] Englische Seite bauen
 - [ ] Umleitung zur englischen Seite bauen
 - [ ] Echte Bilder einbauen
 - [ ] Minimales SEO einbauen
-- [ ] Accessability testen (Playwright?)
+- [x] Accessability testen (Playwright?)
 - [x] Deploy on AWS S3 -> dev -> http://dev.ushomi-musambani.de.s3-website.eu-central-1.amazonaws.com
-- [ ] CI/CD mit GitHub Actions einbauen: push -> dev, merge PR -> test, merge PR -> prod
+- [x] CI/CD mit GitHub Actions einbauen: push -> dev, merge PR -> test, merge PR -> prod
 - [ ] Deploy on Strato
 - [x] Seite auf Safary testen
 - [x] Seite auf Firefox testen
