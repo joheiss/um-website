@@ -17,13 +17,17 @@
 
   <link rel="icon" href="./favicon.ico" sizes="any">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <!--
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  -->
   <link rel="apple-touch-icon" href="./icon.png">
 
   <!-- ICONS -->
   <link href="./resources/vendors/css/ionicons.min.css" rel="stylesheet" type="text/css">
   <!-- GALLERY -->
   <link rel="stylesheet" href="./resources/vendors/fancybox/fancybox/fancybox.css" />
+  <!-- FONTS STYLESHEET -->
+  <link rel="stylesheet" href="./resources/css/fonts.css">
   <!-- CUSTOM STYLESHEET -->
   <link rel="stylesheet" href="./resources/css/style.css">
 
@@ -33,28 +37,28 @@
 
 <body>
 
-<header id="top">
+<header id="top" aria-label="Header">
   <nav class="jo-nav-full">
     <div class="jo-nav">
-      <a class="jo-nav-logo-link" href="#top">
+      <a class="jo-nav-logo-link" href="#top" aria-label="Logo">
         <img class="jo-nav-logo" src="./resources/img/Ushomi-Musambani-Logo.png" alt="Ushomi Logo">
       </a>
       <ul class="jo-nav-main js--nav-main">
-        <li><a class="js--nav-link-mobile" href="#isamu">Isamu</a></li>
-        <li><a class="js--nav-link-mobile" href="#delali">Delali</a></li>
-        <li><a class="js--nav-link-mobile" href="#cookie">Cookie</a></li>
-        <li><a class="js--nav-link-mobile" href="#aboutus">Über uns</a></li>
-        <li><a class="js--nav-link-mobile" href="#contact">Kontakt</a></li>
-        <li><a class="js--nav-link-mobile" href="#news">News</a></li>
+        <li><a class="js--nav-link-mobile" href="#isamu" aria-label="Isamu">Isamu</a></li>
+        <li><a class="js--nav-link-mobile" href="#delali" aria-label="Delali">Delali</a></li>
+        <li><a class="js--nav-link-mobile" href="#cookie" aria-label="Cookie">Cookie</a></li>
+        <li><a class="js--nav-link-mobile" href="#aboutus" aria-label="About us">Über uns</a></li>
+        <li><a class="js--nav-link-mobile" href="#contact" aria-label="Contact">Kontakt</a></li>
+        <li><a class="js--nav-link-mobile" href="#news" aria-label="News">News</a></li>
       </ul>
-      <a class="jo-nav-icon-mobile js--nav-icon-mobile">
+      <a class="jo-nav-icon-mobile js--nav-icon-mobile" area-label="Mobile MenuS">
         <i class="ion-navicon-round"></i>
       </a>
     </div>
   </nav>
 </header>
 
-<div class="jo-page">
+<main class="jo-page">
 
     <div class="jo-content">
       <!-------------------------------------------------------------------------------------->
@@ -779,7 +783,7 @@
             <p class="jo-contact-phone">Telefon: 07946/989340 oder 01575/3580828</p>
           </div>
           <div class="jo-contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.402291021307!2d9.415683276950007!3d49.21189727576354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47983be590a263f7%3A0x1e305236b7c6bdce!2sS%C3%BCdstra%C3%9Fe%209%2C%2074243%20Langenbrettach!5e0!3m2!1sde!2sde!4v1732139817778!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.402291021307!2d9.415683276950007!3d49.21189727576354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47983be590a263f7%3A0x1e305236b7c6bdce!2sS%C3%BCdstra%C3%9Fe%209%2C%2074243%20Langenbrettach!5e0!3m2!1sde!2sde!4v1732139817778!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
@@ -817,7 +821,7 @@
       <p>Copyright © 2024 Ushomi Musambani</p>
     </footer>
 
-  </div>
+  </main>
 
   <script src="./resources/vendors/js/jquery-3.7.1.min.js"></script>
   <script src="./resources/vendors/js/jquery.waypoints.min.js"></script>

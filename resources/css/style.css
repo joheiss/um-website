@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
 
 /* ---------------------------------------- */
 /* MY CUSTOM VARIABLES                         */
@@ -980,7 +980,7 @@ input[type=submit]:hover {
 /*}*/
 
 .jo-acc-container label:before {
-  font-family: "Material Icons", sans-serif;
+  font-family: "Material Icons";
   content: '\e313';
   font-weight: bolder;
   float: right;
@@ -991,7 +991,7 @@ input[type=submit]:hover {
 }
 
 .jo-acc-container input:checked+label:before {
-  font-family: "Material Icons", sans-serif;
+  font-family: "Material Icons";
   content: "\e5cd";
   transition: 0.5s;
 }

@@ -20,10 +20,11 @@
 - [ ] Minimales SEO einbauen
 - [ ] Accessability testen (Playwright?)
 - [x] Deploy on AWS S3 -> dev -> http://dev.ushomi-musambani.de.s3-website.eu-central-1.amazonaws.com
+- [ ] CI/CD mit GitHub Actions einbauen: push -> dev, merge PR -> test, merge PR -> prod
 - [ ] Deploy on Strato
-- [ ] Seite auf Safary testen
-- [ ] Seite auf Firefox testen
-- [ ] Seite auf Edge testen
+- [x] Seite auf Safary testen
+- [x] Seite auf Firefox testen
+- [x] Seite auf Edge testen
 - [ ] Seite auf verschiedenen Lenovo Notebooks testen
 - [x] Media queries testen: 576px, 768px, 992px, 1200px, and 1400px
 - [x] Daten und Pedigree bei den Hunden eintragen
