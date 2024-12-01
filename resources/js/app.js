@@ -8,11 +8,11 @@ function toggleAcc(id) {
     let nextSibling = acc.nextElementSibling;
     while(nextSibling) {
       if (!!nextSibling.classList && nextSibling.classList.contains("acc-body")) {
-        if (nextSibling.style.display === "block") {
+        if (nextSibling.style.display === "flex") {
           nextSibling.style.display = "none";
           acc.checked = false;
         } else {
-          nextSibling.style.display = "block";
+          nextSibling.style.display = "flex";
           nextSibling.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
           // make sure all other panels are closed as well
           const otherPanels = document.getElementsByClassName("acc-body");
