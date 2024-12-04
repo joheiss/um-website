@@ -12,7 +12,7 @@
 - [x] Footer hinzufügen
 - [x] Google-Fonts lokal speichern
 - [x] Seite ohne NodeJs und Webpack testen
-- [ ] Favicon hinzufügen
+- [x] Favicon hinzufügen
 - [ ] Englische Seite bauen
 - [ ] Umleitung zur englischen Seite bauen
 - [ ] Echte Bilder einbauen
@@ -28,7 +28,7 @@
 - [x] Media queries testen: 576px, 768px, 992px, 1200px, and 1400px
 - [x] Daten und Pedigree bei den Hunden eintragen
 - [x] Wenn ein Reiter auf dem Akkordion geöffnet wird, soll dieser soweit nach oben geschoben werden, dass der ganze Inhalt des Reiters sichtbar ist.
-- [ ] Batchprogramm zum massenweisen Verkleinern von Bildern (png, jpg)
+- [x] Batchprogramm zum massenweisen Verkleinern von Bildern (png, jpg)
 - [x] Menü schöner machen
 - [ ] Facebook und Instagram Icons einbauen
 - [ ] Hamburger-Menü animieren

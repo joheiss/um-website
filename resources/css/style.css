@@ -597,23 +597,20 @@ input[type=submit]:hover {
   width: 50%;
   color: var(--text-color);
   text-align: center;
-  text-decoration: underline;
-  /*height: auto;*/
-  /*padding: 1.0em 2.0em;*/
-  /*text-align: center;*/
-  /*align-self: center;*/
-  /*background-color: var(--base-color);*/
-  /*color: var(--background-color);*/
-  /*border: 1px solid var(--base-color);*/
-  /*border-radius: 1.5em;*/
-  /*margin-top: 2.0em;*/
+  height: auto;
+  padding: 1.0em 2.0em;
+  align-self: center;
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
+  border-radius: 1.5em;
+  margin-top: 2.0em;
   cursor: pointer;
 }
 
 .jo-about-story-btn:hover {
   /*background-color: var(--accent-color);*/
   color: var(--accent-color);
-  /*border: 1px solid var(--accent-color);*/
+  border: 1px solid var(--accent-color);
 }
 
 .jo-about-story-btn.show {
