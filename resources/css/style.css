@@ -186,9 +186,9 @@ textarea {
 /* ---------------------------------------- */
 
 header {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
-  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/hunde.webp);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/drei-hunde_2048.jpg);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/drei-hunde_2048.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(../img/drei-hunde_2048.jpg);
   background-size: contain;
   background-position-y: 30px;
   background-position-x: center;
