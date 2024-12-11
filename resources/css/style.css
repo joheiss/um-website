@@ -812,7 +812,7 @@ input[type=submit]:hover {
 }
 
 .jo-contact-phone {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 .jo-contact-map {
