@@ -492,10 +492,15 @@ input[type=submit]:hover {
 
 
 .jo-dog-gallery-img-small {
-  width: 200px;
-  height: auto;
-  object-fit: fill;
+  /*width: 200px;*/
+  /*height: auto;*/
+  /*object-fit: fill;*/
   cursor: pointer;
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
 }
 
 .jo-dog-pedigree {
@@ -698,10 +703,15 @@ input[type=submit]:hover {
 }
 
 .jo-stories-gallery-img-small {
-  width: 200px;
-  height: auto;
-  object-fit: fill;
+  /*width: 200px;*/
+  /*height: auto;*/
+  /*object-fit: fill;*/
   cursor: pointer;
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
 }
 
 .jo-memory {
@@ -1129,7 +1139,12 @@ li {
   }
 
   .jo-dog-gallery-img-small {
-    width: 180px;
+    /*width: 180px;*/
+    display: block;
+    max-width: 180px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -1312,11 +1327,21 @@ li {
   }
 
   .jo-dog-gallery-img-small {
-    width: 80px;
+    /*width: 80px;*/
+    display: block;
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
   }
 
   .jo-stories-gallery-img-small {
-    width: 90px;
+    /*width: 90px;*/
+    display: block;
+    max-width: 90px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
   }
 
   .jo-about-story-btn {
@@ -1351,7 +1376,12 @@ li {
   }
 
   .jo-dog-gallery-img-small {
-    width: 70px;
+    /*width: 70px;*/
+    display: block;
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
   }
 
   .jo-about-story-btn {
