@@ -910,6 +910,20 @@ input[type=submit]:hover {
   text-decoration: underline;
 }
 
+.jo-footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.0em;
+}
+
+.jo-footer-social-img {
+  width: 24px;
+  height: auto;
+  object-fit: cover;
+}
+
 /* ---------------------------------------- */
 /* FANCYBOX STYLES FOR CAPTION              */
 /* ---------------------------------------- */
