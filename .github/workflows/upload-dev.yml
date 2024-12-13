@@ -21,8 +21,11 @@ jobs:
       - name: Upload html files to S3 bucket
         run: |
           aws s3 cp ./index.html s3://dev.ushomi-musambani.de/
+          aws s3 cp ./index_en.html s3://dev.ushomi-musambani.de/
           aws s3 cp ./imprint.html s3://dev.ushomi-musambani.de/
+          aws s3 cp ./imprint_en.html s3://dev.ushomi-musambani.de/
           aws s3 cp ./privacy.html s3://dev.ushomi-musambani.de/
+          aws s3 cp ./privacy_en.html s3://dev.ushomi-musambani.de/
           aws s3 cp ./favicon.ico s3://dev.ushomi-musambani.de/
           aws s3 cp ./favicon-16x16.png s3://dev.ushomi-musambani.de/
           aws s3 cp ./favicon-32x32.png s3://dev.ushomi-musambani.de/
