@@ -194,7 +194,7 @@ header {
   background-position-x: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 60vmin;
+  min-height: 60vmin;
   z-index: -1;
 }
 
@@ -208,7 +208,7 @@ input[type=submit]:hover {
   width:60px;
   height:60px;
   bottom:15%;
-  right:10%;
+  right:2%;
   background-color: var(--accent-color);
   color: var(--background-color);
   border-radius:50px;
@@ -334,7 +334,7 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   row-gap: 2.0em;
   width: 100%;
 }
@@ -528,6 +528,8 @@ input[type=submit]:hover {
 }
 
 .jo-about-stories {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -540,6 +542,8 @@ input[type=submit]:hover {
   font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
 
 .jo-about-story {
@@ -732,6 +736,8 @@ input[type=submit]:hover {
   font-size: var(--font-size-header);
   font-weight: lighter;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
 
 .jo-memory-list {
@@ -1138,7 +1144,7 @@ li {
 
   header {
     background-size: 1536px auto;
-    height: 60vmin;
+    min-height: 60vmin;
   }
 }
 
@@ -1149,7 +1155,7 @@ li {
 
   header {
     background-size: 1280px auto;
-    height: 60vmin;
+    min-height: 60vmin;
   }
 
   .jo-memory-list {
@@ -1164,14 +1170,12 @@ li {
 
   header {
     background-size: 1024px auto;
-    height: 55vmin;
+    min-height: 55vmin;
   }
 
   .jo-nav-main {
     display: block;
   }
-
-
 }
 
 /* ---------------------------------------- */
@@ -1185,7 +1189,7 @@ li {
   }
   header {
     background-size: contain;
-    height: 50vmin;
+    min-height: 50vmin;
   }
 
   .jo-dog-main-img {
@@ -1218,7 +1222,7 @@ li {
 @media only screen and (max-width: 910px) {
 
   header {
-    height: 45vmin;
+    min-height: 50vmin;
   }
 
   .jo-nav-main li {
@@ -1376,7 +1380,7 @@ li {
   }
 
   header {
-    height: 45vmin;
+    min-height: 50vmin;
   }
 
   .jo-content {
@@ -1471,7 +1475,7 @@ li {
   }
 
   header {
-    height: 45vmin;
+    min-height: 50vmin;
   }
 
   .jo-nav-logo {
@@ -1490,5 +1494,50 @@ li {
 
   .jo-dog-parent {
     font-size: 1.0em;
+  }
+}
+/* ---------------------------------------- */
+/* UP TO 250PX - SMALL PHONES               */
+/* ---------------------------------------- */
+@media only screen and (max-width: 500px) {
+
+  header {
+    min-height: 55vmin;
+  }
+  :root {
+    --font-size-text: 12px;
+    --font-size-big: 36px;
+    --font-size-header: 24px;
+  }
+
+  .jo-dog-parent {
+    font-size: 0.8em;
+  }
+
+  .jo-footer-nav {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.0em;
+    font-size: var(--font-size-text)
+  }
+}
+
+/* --------------------------------------------- */
+/* UP TO 900PX - HEIGHT                          */
+/* --------------------------------------------- */
+@media only screen and (max-height: 900px) {
+
+  header {
+    min-height: 70vmin;
+  }
+}
+
+/* --------------------------------------------- */
+/* UP TO 900PX - HEIGHT                          */
+/* --------------------------------------------- */
+@media only screen and (max-height: 700px) {
+
+  header {
+    min-height: 95vmin;
   }
 }
