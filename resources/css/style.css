@@ -670,7 +670,8 @@ input[type=submit]:hover {
 }
 
 .jo-gallery-btn {
-  min-width: 50%;
+  min-width: 350px;
+  max-width: 50%;
   height: auto;
   padding: 1.0em 2.0em;
   text-align: center;
@@ -1272,6 +1273,12 @@ li {
 
   .jo-about-story-text {
     width: 100%;
+  }
+
+  .jo-gallery-btn {
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
   }
 
   .jo-memory-list {
