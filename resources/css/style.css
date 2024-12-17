@@ -194,7 +194,7 @@ header {
   background-position-x: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  min-height: 60vmin;
+  min-height: 65vmin;
   z-index: -1;
 }
 
@@ -1144,7 +1144,7 @@ li {
 
   header {
     background-size: 1536px auto;
-    min-height: 60vmin;
+    min-height: 65vmin;
   }
 }
 
@@ -1155,7 +1155,7 @@ li {
 
   header {
     background-size: 1280px auto;
-    min-height: 60vmin;
+    min-height: 65vmin;
   }
 
   .jo-memory-list {
@@ -1170,7 +1170,7 @@ li {
 
   header {
     background-size: 1024px auto;
-    min-height: 55vmin;
+    min-height: 65vmin;
   }
 
   .jo-nav-main {
@@ -1189,7 +1189,7 @@ li {
   }
   header {
     background-size: contain;
-    min-height: 50vmin;
+    min-height: 60vmin;
   }
 
   .jo-dog-main-img {
@@ -1222,7 +1222,7 @@ li {
 @media only screen and (max-width: 910px) {
 
   header {
-    min-height: 50vmin;
+    min-height: 60vmin;
   }
 
   .jo-nav-main li {
@@ -1523,12 +1523,12 @@ li {
 }
 
 /* --------------------------------------------- */
-/* UP TO 900PX - HEIGHT                          */
+/* UP TO 1000PX - HEIGHT                          */
 /* --------------------------------------------- */
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 1000px) {
 
   header {
-    min-height: 70vmin;
+    min-height: 80vmin;
   }
 }
 
